@@ -1,29 +1,228 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Datenschutzerklärung</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rechtliches | Legal</title>
+
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #e5e5ea;
+}
+
+button.active {
+    background: #007aff;
+    color: white;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+
+<script>
+function switchLang(lang) {
+    document.getElementById("de").classList.add("hidden");
+    document.getElementById("en").classList.add("hidden");
+
+    document.getElementById(lang).classList.remove("hidden");
+
+    document.getElementById("btn-de").classList.remove("active");
+    document.getElementById("btn-en").classList.remove("active");
+
+    document.getElementById("btn-" + lang).classList.add("active");
+}
+</script>
+
 </head>
 <body>
-    <h1>Datenschutzerklärung</h1>
 
-    <p>
-        Diese App erhebt selbst keine personenbezogenen Daten.
-    </p>
+<div class="container">
+<h1>Rechtliches</h1>
 
-    <p>
-        Käufe und Abonnements werden über den Apple App Store abgewickelt.
-        Dabei verarbeitet Apple die dafür notwendigen Daten gemäß seiner
-        Datenschutzrichtlinien.
-    </p>
+<div class="toggle">
+    <button id="btn-de" class="active" onclick="switchLang('de')">Deutsch</button>
+    <button id="btn-en" onclick="switchLang('en')">English</button>
+</div>
 
-    <p>
-        Der Entwickler hat keinen Zugriff auf persönliche Zahlungsdaten.
-    </p>
+<!-- ===================== DE ===================== -->
+<div id="de">
 
-    <p>
-        Kontakt:<br>
-        <a href="mailto:schatto@t-online.de">schatto@t-online.de</a>
-    </p>
+<div class="card">
+<h2>Datenschutzerklärung</h2>
+<p>Diese App erhebt selbst keine personenbezogenen Daten.</p>
+
+<p>Käufe und Abonnements werden über den Apple App Store abgewickelt. Dabei verarbeitet Apple die dafür notwendigen Daten gemäß seiner Datenschutzrichtlinien.</p>
+
+<p>Der Entwickler hat keinen Zugriff auf persönliche Zahlungsdaten.</p>
+
+<p>Kontakt:<br>
+<a href="mailto:schatto@t-online.de">schatto@t-online.de</a>
+</p>
+</div>
+
+<div class="card">
+<h2>Impressum</h2>
+
+<p><strong>Angaben gemäß § 5 TMG</strong></p>
+
+<p>
+Michael Schatto<br>
+Pauline-Mohr-Str. 11<br>
+55571 Odernheim<br>
+Deutschland
+</p>
+
+<p>
+Kontakt:<br>
+E-Mail: <a href="mailto:schatto@t-online.de">schatto@t-online.de</a>
+</p>
+
+<p>
+Unternehmensform: Einzelunternehmen<br>
+Vertretungsberechtigte Person: Michael Schatto
+</p>
+
+<h3>Haftung für Inhalte</h3>
+<p>
+Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte in dieser App nach den allgemeinen Gesetzen verantwortlich. 
+Nach §§ 8 bis 10 TMG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.
+</p>
+
+<h3>Haftung für Berechnungen</h3>
+<p>
+Die in der App bereitgestellten Berechnungen (z. B. Wein-, Alkohol- oder Mischungsverhältnisse) dienen ausschließlich Informationszwecken. 
+Es wird keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Ergebnisse übernommen. 
+Die Nutzung erfolgt auf eigene Verantwortung.
+</p>
+
+<h3>Urheberrecht</h3>
+<p>
+Die durch den App-Betreiber erstellten Inhalte und Berechnungen unterliegen dem deutschen Urheberrecht. 
+Eine Vervielfältigung oder Verwendung außerhalb der App bedarf der schriftlichen Zustimmung des Betreibers.
+</p>
+
+<h3>Plattform-Hinweis</h3>
+<p>
+Diese App steht in keiner Verbindung zu Apple Inc.  
+Apple ist weder Sponsor noch verantwortlich für Inhalte oder Funktionen dieser App.
+</p>
+
+</div>
+</div>
+
+<!-- ===================== EN ===================== -->
+<div id="en" class="hidden">
+
+<div class="card">
+<h2>Privacy Policy</h2>
+
+<p>This app does not collect any personal data.</p>
+
+<p>Purchases and subscriptions are handled via the Apple App Store. Apple processes the necessary data in accordance with its privacy policies.</p>
+
+<p>The developer has no access to personal payment data.</p>
+
+<p>Contact:<br>
+<a href="mailto:schatto@t-online.de">schatto@t-online.de</a>
+</p>
+</div>
+
+<div class="card">
+<h2>Legal Notice</h2>
+
+<p><strong>Information according to § 5 TMG</strong></p>
+
+<p>
+Michael Schatto<br>
+Pauline-Mohr-Str. 11<br>
+55571 Odernheim<br>
+Germany
+</p>
+
+<p>
+Contact:<br>
+Email: <a href="mailto:schatto@t-online.de">schatto@t-online.de</a>
+</p>
+
+<p>
+Business type: Sole proprietorship<br>
+Authorized representative: Michael Schatto
+</p>
+
+<h3>Liability for Content</h3>
+<p>
+As a service provider, we are responsible for our own content in this app according to general laws (§ 7 para.1 TMG). 
+According to §§ 8 to 10 TMG, we are not obliged to monitor transmitted or stored third-party information.
+</p>
+
+<h3>Liability for Calculations</h3>
+<p>
+The calculations provided in the app (e.g. wine, alcohol or mixing ratios) are for informational purposes only. 
+No guarantee is given for accuracy, completeness or timeliness. Use is at your own risk.
+</p>
+
+<h3>Copyright</h3>
+<p>
+The content and calculations created by the app operator are subject to German copyright law. 
+Any reproduction or use outside the app requires written permission.
+</p>
+
+<h3>Platform Notice</h3>
+<p>
+This app is not affiliated with Apple Inc.  
+Apple is neither a sponsor nor responsible for the content or functionality of this app.
+</p>
+
+</div>
+</div>
+
+</div>
+
 </body>
 </html>
